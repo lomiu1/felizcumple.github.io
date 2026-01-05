@@ -229,7 +229,7 @@ function mostrarTarta() {
     
     const cakeImg = document.createElement('img');
     cakeImg.classList.add('cake-image');
-    cakeImg.src = 'Tarta.png';
+    cakeImg.src = 'https://2.bp.blogspot.com/-j9b-XDOiKd4/VjdBMp50cPI/AAAAAAAA61E/mi_mkqwmnnQ/s1600/mine.png';
     cakeImg.alt = 'Tarta de cumpleaños';
     
     cake.appendChild(cakeImg);
