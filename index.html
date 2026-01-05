@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>¡Feliz Cumpleaños!</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="deco.css">
+    <link rel="icon" href="https://cdn.pixabay.com/photo/2016/02/04/11/57/heart-1179054_1280.png">
+</head>
+<body>
+    <!-- Audio de fondo -->
+    <audio id="birthday-music" loop>
+        <source src="i.mp3.mp4" type="audio/mpeg">
+    </audio>
+    
+    <!-- Canvas para confeti -->
+    <canvas id="confetti-canvas"></canvas>
+    
+    <!-- Contenedor de estrellas -->
+    <div class="stars-container"></div>
+    
+    <!-- Contenedor de la tarta -->
+    <div class="cake-container"></div>
+    
+    <!-- Contenedor principal -->
+    <div class="container">
+        <!-- Lado izquierdo - Saludo -->
+        <div class="left-side">
+            <h1 class="dancing-script">¡Feliz<br>Cumpleaños!</h1>
+            <p class="subtitle">Que disfrutes al máximo este especial día, mi querida Ati 💕</p>
+            <button class="celebrate-btn" onclick="celebrar()">¡Celebrar!</button>
+        </div>
+        
+        <!-- Lado derecho - Imagen -->
+        <div class="right-side">
+            <div class="image-container">
+                <img id="birthday-image" src="descargar (1).gif" alt="Cumpleaños">
+                <div class="image-frame"></div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Luces de fondo -->
+    <div class="lights">
+        <div class="light"></div>
+        <div class="light"></div>
+        <div class="light"></div>
+        <div class="light"></div>
+        <div class="light"></div>
+    </div>
+    
+    <script src="java.js"></script>
+</body>
+</html>
