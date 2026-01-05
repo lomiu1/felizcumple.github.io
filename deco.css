@@ -231,6 +231,7 @@ canvas {
     object-fit: contain;
     filter: drop-shadow(0 0 20px rgba(255, 255, 255, 0.8));
     animation: cakeAppear 0.5s ease-out, cakeRotate 2s ease-in-out infinite;
+    display: block;
 }
 
 @keyframes cakeAppear {

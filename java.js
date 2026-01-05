@@ -175,10 +175,12 @@ function explotarEstrella(star, x, y) {
 
 // Función celebrar
 function celebrar() {
+    console.log('Celebrar presionado');
+    
     // Reproducir audio
     const audio = document.getElementById('birthday-music');
     audio.currentTime = 0; // Reiniciar desde el inicio
-    audio.play();
+    audio.play().catch(err => console.log('Error al reproducir audio:', err));
     
     // Mostrar la tarta
     mostrarTarta();
@@ -224,6 +226,10 @@ setInterval(() => {
 // Función para mostrar la tarta
 function mostrarTarta() {
     const cakeContainer = document.querySelector('.cake-container');
+    
+    // Limpiar tartas anteriores
+    cakeContainer.innerHTML = '';
+    
     const cake = document.createElement('div');
     cake.classList.add('cake');
     
@@ -231,9 +237,13 @@ function mostrarTarta() {
     cakeImg.classList.add('cake-image');
     cakeImg.src = 'https://2.bp.blogspot.com/-j9b-XDOiKd4/VjdBMp50cPI/AAAAAAAA61E/mi_mkqwmnnQ/s1600/mine.png';
     cakeImg.alt = 'Tarta de cumpleaños';
+    cakeImg.style.display = 'block';
     
     cake.appendChild(cakeImg);
     cakeContainer.appendChild(cake);
+    
+    // Log para debug
+    console.log('Tarta mostrada');
     
     // Después de 2 segundos, explotar la tarta
     setTimeout(() => {
